@@ -6,8 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<!-- this is how we link up the stylesheet -->
 	<link href="css/style.css" rel="stylesheet" type="text/css">
-	<!-- And this is how we link up the JS! -->
-	<script defer src="js/main.js"></script>
+
 	<!-- Be sure to give your game a fun title -->
 	<title>Tic Tac Toe</title>
 </head>
@@ -17,18 +16,23 @@
 	<!-- Many websites are just divs on divs on divs. Pay attention to the class and id attributes. We will be using those later to style and find elements in the document -->
 	<div class="flex-container flex-column">
 	<div class="flex-container flex-wrap" id="board">
-	<div class="square"></div>
-	<div class="square"></div>
-	<div class="square"></div>
-	<div class="square"></div>
-	<div class="square"></div>
-	<div class="square"></div>
-	<div class="square"></div>
-	<div class="square"></div>
-	<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
 	</div>
 	<!-- A reset button because users are going to want to play round after round of your glorious game without ever refreshing the browser! -->
-		<button id="reset-button">reset</button>
+		<button id="reset-button">Reset board</button>
+		<h3></h3>
+		<button id="reset-score-button">Reset Score</button>
+		<div id="pokemon"></div>
 	</div>
+		<!-- And this is how we link up the JS! -->
+	<script defer src="js/main.js"></script>
 </body>
 </html>
