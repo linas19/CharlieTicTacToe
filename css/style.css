@@ -32,7 +32,6 @@ h2 {
 	border: 2px solid rgba(0, 0, 0, .75);
 	height: 140px;
 	width: 140px;
-	background-image: url("../data/p1.png");
 }
 #reset-button {
 	text-align: center;
@@ -41,12 +40,4 @@ h2 {
 	height: 55px;
 	width: 100px;
 	margin: 10px;
-}
-.image1 {
-	background-image: url("../data/p1.png");
-  	background-size: contain;
-}
-.image2 {
-	background-image: url("../data/p2.png");
-  	background-size: contain;
 }

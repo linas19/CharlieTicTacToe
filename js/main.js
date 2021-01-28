@@ -15,10 +15,11 @@ let turn = 'X';
 let win;
 let scoreX = 0;
 let scoreO = 0;
-var img = document.createElement("img");
-img.src = "data/p1.png";
-var src = document.getElementById("pokemon");
-src.appendChild(img);
+// var img = document.createElement("img");
+// img.src = "data/p1.png";
+// var src = document.getElementById("pokemon");
+// src.appendChild(img);
+
 /*----- cached element references -----*/
 const squares = Array.from(document.querySelectorAll('#board div'));
 const messages = document.querySelector('h2');
@@ -28,6 +29,8 @@ document.getElementById('board').addEventListener('click', handleTurn);
 document.getElementById('reset-button').addEventListener('click', init);
 document.getElementById('reset-score-button').addEventListener('click', resetScore);
 /*----- functions -----*/
+
+
 function init(){
 	board = [
 	'', '', '',
@@ -43,7 +46,7 @@ function resetScore(){
 	scoreO = 0;
 	scores.textContent = 'X score=' + scoreX + ' and O score=' + scoreO
 	init()
-}
+};
 function getWinner() {
 	let winner = null;
 	winningCombos.forEach((combo, index) => {
@@ -54,7 +57,7 @@ function getWinner() {
 		} else if (winner === 'O') {
 			scoreO ++
 		}
-		alert("Winner is: " + winner + " X score: " + scoreX + " O score: " + scoreO);
+		alert("Winner ilkjs: " + winner + " X score: " + scoreX + " O score: " + scoreO);
 		scores.textContent = 'X score=' + scoreX + ' and O score=' + scoreO
 		init()
 		}
