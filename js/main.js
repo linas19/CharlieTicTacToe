@@ -57,7 +57,7 @@ function getWinner() {
 		} else if (winner === 'O') {
 			scoreO ++
 		}
-		alert("Winner ilkjs: " + winner + " X score: " + scoreX + " O score: " + scoreO);
+		alert("Winner ildskjs: " + winner + " X score: " + scoreX + " O score: " + scoreO);
 		scores.textContent = 'X score=' + scoreX + ' and O score=' + scoreO
 		init()
 		}
